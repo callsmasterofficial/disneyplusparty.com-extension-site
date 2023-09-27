@@ -1,7 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 export default {
   siteName: 'Disney Plus Party',
-  url: 'https://www.disneyplusparty.com',
+  url: 'https://www.disneyplusparty.com/',
   blogUrl: '/blog',
   siteId: '62a7919492c68b0d2f1e4078',
   extLink: {
@@ -16,7 +16,7 @@ export default {
     first: {
       heading: 'Co-watch Disney with your favorite people, anytime, anywhere!',
       html: `
-      Disney is more fun with friends and family. Then why watch it alone? Now you can watch Disney with your favorite people while staying anywhere across the world. Install the <a href="https://www.disneyplusparty.com"><b>Disney Plus Party</b></a> extension and have online watch parties in perfect sync!<br/><br/>Moreover, Disney Plus even offers GroupWatch, which allows users worldwide to enjoy shows, series, and movies with friends and family. Don’t worry; even Apple users can use SharePlay for this. And to make your Disney Plus Group Watch special, you can use its feature. Its features provide seamless viewing, allowing continuous playback and control over rewinding, pausing, and fast-forwarding. Therefore, here are guidelines for setting up these features are available below. Note that Disney Plus Group Watch is currently in the US. But iPhone and iPad users can enjoy Disney+ with friends through SharePlay.
+      Disney is more fun with friends and family. Then why watch it alone? Now you can watch Disney with your favorite people while staying anywhere across the world. Install the <a href="https://www.disneyplusparty.com"><b><u>Disney Plus Party</u></b></a> extension and have online watch parties in perfect sync!<br/><br/>Moreover, Disney Plus even offers GroupWatch, which allows users worldwide to enjoy shows, series, and movies with friends and family. Don’t worry; even Apple users can use SharePlay for this. And to make your Disney Plus Group Watch special, you can use its feature. Its features provide seamless viewing, allowing continuous playback and control over rewinding, pausing, and fast-forwarding. Therefore, here are guidelines for setting up these features are available below. Note that Disney Plus Group Watch is currently in the US. But iPhone and iPad users can enjoy Disney+ with friends through SharePlay.
       `,
       video:
         'https://super-dashboard-images-cdn.s3.amazonaws.com/videos/1646197313207-sync-disney-plus.mp4',
