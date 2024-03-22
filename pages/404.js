@@ -1,27 +1,32 @@
 import React from 'react'
-import Navbar from "../components/Navbar"
+import Navbar from '../components/Navbar'
 import Error from '../components/404'
+import { getAllmeta, getHome } from '../locale/index'
 
-export async function getStaticProps(){
+export async function getStaticProps({ locale }) {
+  const allmeta = getAllmeta(locale)
+  const home = getHome(locale)
   return {
-    props:{
-      meta:{
-        title:"Disney Plus Party - Watch Disney Plus with Friends Online from Anywhere!",
-        description:"Disney Plus Party allows you to stream Disney Plus with your friends &amp; family online from different locations. Install the Extension Now!",
-        keywords:"Disney Plus Party, Disney Plus Watch Party, Watch Party Disney Plus, How to do a Watch Party on Disney Plus, Disney Watch Party, Disney Party, Watch Party on Disney Plus, How to Host a Disney Plus Watch Party",
-        pageUrl:"https://www.disneyplusparty.com/",
-        featuredImage:"/logo.png"
-      }
-    }
+    props: {
+      home,
+      allmeta,
+      meta: {
+        title: allmeta.foroforMetatitle,
+        description: allmeta.foroforMetadescription,
+        keywords: allmeta.homeMetakeywords,
+        pageUrl: 'https://www.disneyplusparty.com/',
+        featuredImage: '/logo.png',
+      },
+    },
   }
 }
-function error() {
+function error({ home }) {
   return (
-    <div className='error_404 '>
+    <div className="error_404 ">
       <div>
-        <Navbar/>
+        <Navbar installBtn={home.header.installBtn} />
       </div>
-      <Error/>
+      <Error />
     </div>
   )
 }
